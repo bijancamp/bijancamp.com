@@ -1,0 +1,33 @@
+html, body {
+  border-top: 3px solid #0091e5;
+}
+
+.container a {
+  color: #0091e5;
+}
+
+.container a:hover {
+  color: #006dab;
+}
+
+.panel h4 a,
+h5 a {
+  color: #0091e5;
+}
+
+.panel h4 a:hover,
+h5 a:hover {
+  color: #006dab;
+}
+
+.avatar {
+  padding-top: 2vh;
+}
+
+.avatar img {
+  width: 200px;
+}
+
+.footer {
+  border-bottom: 5px solid #0091e5;
+}

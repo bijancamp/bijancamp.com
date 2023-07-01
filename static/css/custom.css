@@ -1,3 +1,7 @@
+li ul {
+    margin-bottom: 0;
+}
+
 .sidebar {
     color: rgba(255, 255, 255, 0.7);
 }

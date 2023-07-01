@@ -25,9 +25,9 @@ So let's dive right into it!
 ## Overview
 This post is divided into sections, guiding you on how to:
 
-1. **Create an Azure App Configuration store**
-2. **Integrate Azure App Configuration into Synapse pipelines**
-3. **Integrate Azure App Configuration into Synapse (PySpark) notebooks**
+1. **Create an Azure App Configuration store.**
+2. **Integrate Azure App Configuration into Synapse pipelines.**
+3. **Integrate Azure App Configuration into Synapse (PySpark) notebooks.**
 
 Before starting, make sure you have all the prerequisites mentioned in the section below.
 

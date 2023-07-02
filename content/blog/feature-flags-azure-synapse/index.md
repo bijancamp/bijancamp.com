@@ -54,10 +54,6 @@ New-AzAppConfigurationStore `
 
 **Note**: In Production, you'll want to use the `Standard` sku if you have availability requirements or other needs.
 
-You should now have a provisioned App Configuration store:
-
-![Screenshot of the Azure Portal that shows the overview page of the provisioned App Configuration store.](images/app-configuration-overview.png)
-
 To create and manage feature flags, you need the role of **App Configuration Data Reader** on the configuration store:
 ```ps
 New-AzRoleAssignment `

@@ -11,7 +11,7 @@ theme = "hyde"
   avatar = "/images/profile.png"
   author = "Bijan Camp"
   headline = "Software Engineer"
-  description = "Azure Data Engineering Blog"
+  description = "Software Engineering Blog"
   publicURL = "http://bijancamp.com/"
 
   themeColor = "theme-base-0d"

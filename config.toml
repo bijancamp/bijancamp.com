@@ -1,6 +1,6 @@
 baseURL = "/"
 languageCode = "en-US"
-title = "Bijan Camp | Azure Data Consultant"
+title = "Bijan Camp | Software Engineer"
 # Enable comments by entering your Disqus shortname
 disqusShortname = "bijancamp"
 # Enable Google Analytics by entering your tracking code
@@ -10,7 +10,7 @@ theme = "hyde"
 [params]
   avatar = "/images/profile.png"
   author = "Bijan Camp"
-  headline = "Azure Data Consultant"
+  headline = "Software Engineer"
   description = "Azure Data Engineering Blog"
   publicURL = "http://bijancamp.com/"
 

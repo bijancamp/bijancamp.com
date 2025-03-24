@@ -4,7 +4,7 @@ date: 2025-03-23
 ---
 
 
-My friend and team lead at [QSC](https://www.qsc.com/) told me that he was
+My friend and tech lead at [QSC](https://www.qsc.com/) told me that he was
 considering switching from Docker to Podman on his Windows host. I had never
 used Podman before, but I was interested in trying it out with dev containers in
 Visual Studio Code and seeing if it was maybe something we could use going

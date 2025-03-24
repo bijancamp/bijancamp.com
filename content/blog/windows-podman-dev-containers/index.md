@@ -71,14 +71,14 @@ Then, update your `dev.containers.dockerPath` setting to `podman`:
 
 You should now be ready to run dev containers from VS Code with Podman. To try
 it out, from the Command Palette in VS Code
-(<kbd>F1</kbd> or <kbd>Ctrl + Shift + p</kbd>), run the command
+(<kbd>F1</kbd> or <kbd>Ctrl+Shift+p</kbd>), run the command
 **Dev Containers: Try a Dev Container Sample...** and select any of the samples:
 
 ![Dev container sample options](images/dev-container-options.png)
 
 VS Code will reload the window and then build and start the selected dev
-container. If everything goes well, you should see "Dev Container", along with
-the name of your chosen sample, in the bottom left of the Status bar:
+container. If everything goes well, you should see "Dev Container," along with
+the name of your chosen sample, in the bottom left corner of the Status bar:
 
 ![Successful status bar indicator](images/success-status-bar.png)
 

@@ -3,9 +3,9 @@ title: About
 layout: "about"
 ---
 
-Hi, I'm **Bijan**! I'm a Staff Software Engineer at QSC.
+Hi, I'm **Bijan**! I'm a Senior Developer in Data & AI at S&B.
 
-I love blending architecture, engineering, and leadership to drive meaningful innovation and help others level up.
+I love blending people, processes, and tools to deliver software and data products faster and more reliably à la DevOps.
 
 Check out [my blog posts] for software engineering insights.
 

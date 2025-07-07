@@ -3,11 +3,11 @@ title: About
 layout: "about"
 ---
 
-Hi, I'm **Bijan**! I'm a Senior Developer in Data & AI at S&B.
+Hi, I'm **Bijan**! I'm a Senior Data & AI Engineer at S&B.
 
-I love blending people, processes, and tools to deliver software and data products faster and more reliably à la DevOps.
+I love blending people, processes, and tools to deliver Azure data & AI solutions faster and more reliably.
 
-Check out [my blog posts] for software engineering insights.
+Check out [my blog posts] for insights into data & AI in the Azure ecosystem.
 
 Also, let's connect [on LinkedIn]!
 

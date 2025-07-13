@@ -17,7 +17,7 @@
         <li><a href="{{ .Site.BaseURL }}">Home</a> </li>
         {{ range .Site.Menus.main -}}
         <li>
-          {{ if or (or (eq .Name "Home") (eq .Name "About")) (eq .Name "Posts") -}}
+          {{ if or (or (or (eq .Name "Home") (eq .Name "About")) (eq .Name "Posts")) (eq .Name "Projects") -}}
             <a href="{{.URL}}"> {{ .Name }} </a>
           {{- else -}}
             <a href="{{.URL}}" target="_blank"> {{ .Name }} </a>

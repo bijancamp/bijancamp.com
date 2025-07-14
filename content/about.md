@@ -5,7 +5,7 @@ layout: "about"
 
 Hi, I'm **Bijan**! I'm a Senior Developer in Data & AI at S&B.
 
-I love blending people, processes, and tools to deliver data & AI solutions faster and more reliably.
+I love blending people, processes, and tools to build software and deliver data & AI solutions faster and more reliably.
 
 Check out [my blog posts] for insights into data & AI—especially within the Azure ecosystem.
 

@@ -1,32 +1,93 @@
 <aside class="sidebar">
   <div class="container sidebar-sticky">
-    <div class="avatar">
-      <a href="{{ .Site.BaseURL }}">
-        <img class="rounded-circle" src="{{ .Site.Params.avatar }}" alt="{{ .Site.Params.Author }}" title="Home">
-      </a>
-    </div>
-    <div class="sidebar-about">
-      <a href="{{ .Site.BaseURL }}"><h1>{{ .Site.Params.Author }}</h1></a>
-      <p class="lead">
-      {{ with .Site.Params.headline }} {{.}} {{ else }}An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.{{end}}
-      </p>
+    <!-- Mobile/Tablet Menu Bar -->
+    <div class="mobile-menu-bar">
+      <!-- Hamburger Menu Button (visible on phone only) -->
+      <button class="hamburger-menu" id="hamburger-menu" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <!-- Avatar -->
+      <div class="mobile-avatar">
+        <a href="{{ .Site.BaseURL }}">
+          <img class="rounded-circle" src="{{ .Site.Params.avatar }}" alt="{{ .Site.Params.Author }}" title="Home">
+        </a>
+      </div>
+      
+      <!-- Site Title and Subtitle -->
+      <div class="mobile-title">
+        <a href="{{ .Site.BaseURL }}">
+          <h1>{{ .Site.Params.Author }}</h1>
+          <span class="mobile-subtitle">{{ .Site.Params.headline }}</span>
+        </a>
+      </div>
+      
+      <!-- Navigation Links (visible on tablet, hidden on phone) -->
+      <nav class="tablet-nav">
+        <ul class="tablet-nav-list">
+          <li><a href="{{ .Site.BaseURL }}">Home</a></li>
+          {{ range .Site.Menus.main -}}
+          <li>
+            {{ if or (or (or (eq .Name "Home") (eq .Name "About")) (eq .Name "Posts")) (eq .Name "Projects") -}}
+              <a href="{{.URL}}">{{ .Name }}</a>
+            {{- else -}}
+              <a href="{{.URL}}" target="_blank">{{ .Name }}</a>
+            {{- end }}
+          </li>
+          {{- end }}
+        </ul>
+      </nav>
     </div>
 
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="{{ .Site.BaseURL }}">Home</a> </li>
+    <!-- Mobile Menu Dropdown (hidden by default) -->
+    <div class="mobile-menu-dropdown" id="mobile-menu-dropdown">
+      <ul class="mobile-menu-list">
+        <li><a href="{{ .Site.BaseURL }}">Home</a></li>
         {{ range .Site.Menus.main -}}
         <li>
           {{ if or (or (or (eq .Name "Home") (eq .Name "About")) (eq .Name "Posts")) (eq .Name "Projects") -}}
-            <a href="{{.URL}}"> {{ .Name }} </a>
+            <a href="{{.URL}}">{{ .Name }}</a>
           {{- else -}}
-            <a href="{{.URL}}" target="_blank"> {{ .Name }} </a>
+            <a href="{{.URL}}" target="_blank">{{ .Name }}</a>
           {{- end }}
         </li>
         {{- end }}
+        <li class="mobile-copyright">{{ with .Site.Params.copyright }}{{.}}{{ else }}&copy; {{ now.Format "2006"}}. All rights reserved. {{end}}</li>
       </ul>
-    </nav>
+    </div>
 
-    <p>{{ with .Site.Params.copyright }}{{.}}{{ else }}&copy; {{ now.Format "2006"}}. All rights reserved. {{end}}</p>
+    <!-- Desktop Sidebar (original content for desktop) -->
+    <div class="desktop-sidebar">
+      <div class="avatar">
+        <a href="{{ .Site.BaseURL }}">
+          <img class="rounded-circle" src="{{ .Site.Params.avatar }}" alt="{{ .Site.Params.Author }}" title="Home">
+        </a>
+      </div>
+      <div class="sidebar-about">
+        <a href="{{ .Site.BaseURL }}"><h1>{{ .Site.Params.Author }}</h1></a>
+        <p class="lead">
+        {{ with .Site.Params.headline }} {{.}} {{ else }}An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.{{end}}
+        </p>
+      </div>
+
+      <nav>
+        <ul class="sidebar-nav">
+          <li><a href="{{ .Site.BaseURL }}">Home</a> </li>
+          {{ range .Site.Menus.main -}}
+          <li>
+            {{ if or (or (or (eq .Name "Home") (eq .Name "About")) (eq .Name "Posts")) (eq .Name "Projects") -}}
+              <a href="{{.URL}}"> {{ .Name }} </a>
+            {{- else -}}
+              <a href="{{.URL}}" target="_blank"> {{ .Name }} </a>
+            {{- end }}
+          </li>
+          {{- end }}
+        </ul>
+      </nav>
+
+      <p>{{ with .Site.Params.copyright }}{{.}}{{ else }}&copy; {{ now.Format "2006"}}. All rights reserved. {{end}}</p>
+    </div>
   </div>
 </aside>

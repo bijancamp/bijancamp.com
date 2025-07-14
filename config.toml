@@ -23,15 +23,15 @@ theme = "hyde"
   weight = 100
   url = "/about/"
 [[menu.main]]
-  name = "Posts"
-  identifier = "posts"
-  weight = 200
-  url = "/blog/"
-[[menu.main]]
   name = "Projects"
   identifier = "projects"
-  weight = 300
+  weight = 200
   url = "/projects/"
+[[menu.main]]
+  name = "Posts"
+  identifier = "posts"
+  weight = 300
+  url = "/blog/"
 [[menu.main]]
   name = "Medium"
   identifier = "medium"

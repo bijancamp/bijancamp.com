@@ -30,6 +30,10 @@ li ul {
 }
 
 @media (max-width: 48em) {
+    .content {
+        padding-top: 2.25rem;
+    }
+
     .copyright {
         display: none;
     }

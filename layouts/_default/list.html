@@ -1,4 +1,7 @@
 {{ define "main" -}}
+<h1>
+  <a href="{{ .Permalink }}">Posts</a>
+</h1>
 <ul class="posts">
 {{ range .Data.Pages -}}
   <li>

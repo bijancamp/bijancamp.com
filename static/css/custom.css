@@ -18,7 +18,7 @@ li ul {
 .avatar img {
     display: block;
     margin: 0 auto;
-    width: 200px;
+    width: 10em;
 }
 
 .rounded-circle {
@@ -27,4 +27,10 @@ li ul {
 
 .test {
     color: #5f8b9e;
+}
+
+@media (max-width: 48em) {
+  .copyright {
+    display: none;
+  }
 }

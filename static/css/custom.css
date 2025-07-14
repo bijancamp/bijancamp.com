@@ -30,7 +30,35 @@ li ul {
 }
 
 @media (max-width: 48em) {
-  .copyright {
-    display: none;
-  }
+    .copyright {
+        display: none;
+    }
+
+    .sidebar {
+        padding: 2rem 1rem 0.8rem;
+    }
+
+    /*
+     * Separate nav items with pipe separators using letter-spacing trick.
+     * See https://chriskirknielsen.com/blog/inline-lists-with-conditional-separators/
+     */
+    .sidebar-nav {
+        list-style: none;
+        padding: 0;
+        display: inline-block;
+    }
+
+    .sidebar-nav li {
+        display: inline;
+    }
+
+    .sidebar-nav li::after {
+        content: ' ';
+        letter-spacing: 1em;
+        background: linear-gradient(90deg, transparent calc(50% - 0.03125em), rgba(255, 255, 255, 0.5) 0, rgba(255, 255, 255, 0.5) calc(50% + 0.03125em), transparent 0);
+    }
+
+    .sidebar-nav a {
+        text-decoration: none;
+    }
 }

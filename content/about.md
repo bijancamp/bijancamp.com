@@ -9,9 +9,12 @@ I love blending people, processes, and tools to deliver data & AI solutions fast
 
 Check out [my blog posts] for insights into data & AI—especially within the Azure ecosystem.
 
+Curious what I've been building? Take a look at my [projects] to see some of my work.
+
 Also, let's connect [on LinkedIn]!
 
 
 
 [my blog posts]: /blog/
+[projects]: /projects/
 [on LinkedIn]: https://linkedin.com/in/bijancamp

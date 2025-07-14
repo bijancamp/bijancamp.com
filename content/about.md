@@ -9,7 +9,7 @@ I love blending people, processes, and tools to build software and deliver data 
 
 Check out [my blog posts] for thoughts on building software, data, and AI solutions—especially in the Azure ecosystem.
 
-Curious what I've been building? Take a look at my [projects] to see some of my work.
+Curious what I've been building? Take a look at [projects] to see some of my work.
 
 Also, let's connect [on LinkedIn]!
 

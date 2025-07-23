@@ -33,12 +33,17 @@ theme = "hyde"
   weight = 300
   url = "/blog/"
 [[menu.main]]
+  name = "GitHub"
+  identifier = "GitHub"
+  weight = 400
+  url = "https://github.com/bijancamp"
+[[menu.main]]
   name = "Medium"
   identifier = "medium"
-  weight = 400
+  weight = 500
   url = "https://medium.com/@bijancamp"
 [[menu.main]]
   name = "Linkedin"
   identifier = "linkedin"
-  weight = 500
+  weight = 600
   url = "https://linkedin.com/in/bijancamp"
